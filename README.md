@@ -3,10 +3,10 @@
 This project demonstrates the performance benefits of using the **OnPush** change detection strategy in Angular. It visually compares the rendering behavior and performance of components with the default **ChangeDetectionStrategy.Default** versus **ChangeDetectionStrategy.OnPush**. You will observe how **OnPush** reduces unnecessary change detection cycles, resulting in more efficient rendering.
 
 📖 **Read the full explanation on Medium**:
-🔗 [Optimizing Angular Rendering with OnPush Strategy: A Performance Guide ( Demo)](#)
+🔗 [Optimizing Angular Rendering with OnPush Strategy: A Performance Guide ( Demo)]()
 
 🎯 **Try the Live Demo**:
-🚀 [Angular OnPush Change Detection Demo](#)
+🚀 [Angular OnPush Change Detection Demo](https://onpush-angular-demo.onrender.com)
 
 ## ⚡ Features
 - **OnPush Strategy**: The demo shows how the OnPush strategy minimizes change detection cycles.
