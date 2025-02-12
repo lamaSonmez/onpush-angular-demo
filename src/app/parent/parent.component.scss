@@ -1,0 +1,63 @@
+.parent-container {
+    text-align: center;
+    padding: 20px;
+    font-family: 'Arial', sans-serif;
+  
+    h2 {
+      margin-bottom: 20px;
+    }
+  
+    .buttons {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      justify-content: center;
+      margin-bottom: 20px;
+  
+      button {
+        padding: 10px 20px;
+        border: none;
+        cursor: pointer;
+        font-size: 14px;
+        transition: 0.3s;
+        background: #007bff;
+        color: white;
+        border-radius: 5px;
+  
+        &:hover {
+          background: #0056b3;
+        }
+      }
+    }
+  
+    .components {
+      display: flex;
+      gap: 20px;
+      justify-content: center;
+    }
+  }
+  .summary {
+    background: #f8f9fa;
+    padding: 15px;
+    border-radius: 8px;
+    margin-top: 20px;
+  }
+  
+  .summary h2 {
+    color: #007bff;
+  }
+  
+  .summary p,
+  .summary ul {
+    text-align: left;
+    font-size: 16px;
+  }
+  
+  .summary ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .summary ul li {
+    padding: 5px 0;
+  }

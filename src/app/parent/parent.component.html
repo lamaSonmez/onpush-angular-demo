@@ -1,0 +1,44 @@
+<div class="parent-container">
+    <h2>Change Detection Demo</h2>
+    
+    <div class="summary">
+        <p>
+          Each time you click a button, Angular decides <strong>whether to rerender
+          the component</strong> based on its change detection strategy:
+        </p>
+        <ul>
+          <li>✅ <strong>Default Strategy:</strong> Always updates the UI when any property changes.</li>
+          <li>🚀 <strong>OnPush Strategy:</strong> Only updates when a new object reference is assigned or an event inside the component triggers detection.</li>
+        </ul>
+        <p>
+          🔹 <strong>If the UI doesn’t update in OnPush mode</strong>, it's because
+          the object reference <strong>didn’t change</strong>, even though its values did.
+        </p>
+        <p>
+          🔹 <strong>To force UI updates in OnPush mode, assign a new object/array/map reference.</strong>
+        </p>
+        <p>💡 <strong>Watch the counter to see how often each component rerenders!</strong></p>
+      </div>
+  
+    <hr/>
+
+    <div class="buttons">
+      <button (click)="incrementPrimitive()">Increment Primitive</button>
+    </div>
+  
+    <div class="buttons">
+        <button (click)="incrementObject()">Modify Object (❌ No Trigger for OnPush)</button>
+        <button (click)="addItem()">Modify Array (❌ No Trigger for OnPush)</button>
+        <button (click)="modifyMap()">Modify Map Value (❌ No Trigger for OnPush)</button>
+    </div>
+    <div class="buttons">
+        <button (click)="changeObjectReference()">Change Object Reference (✅ Triggers OnPush)</button>
+        <button (click)="changeArrayReference()">Change Array Reference (✅ Triggers OnPush)</button>
+        <button (click)="changeMapReference()">Change Map Reference (✅ Triggers OnPush)</button>
+    </div>
+    <div class="components">
+        <app-default-component [counter]="counter" [data]="data" [items]="items" [map]="map"></app-default-component>
+        <app-on-push-component [counter]="counter" [data]="data" [items]="items" [map]="map"></app-on-push-component>
+    </div>
+  </div>
+  
